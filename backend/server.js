@@ -16,7 +16,7 @@ app.use("/products", productRoutes);
 const orderRoutes = require("./routes/orderRoutes");
 app.use("/orders", orderRoutes);
 
-mongoose.connect("mongodb+srv://hemanth:<yourPassword>@cluster0.8ivinws.mongodb.net/ecommerce?retryWrites=true&w=majority")
+mongoose.connect("mongodb+srv://USERNAME:PASSWORD@cluster0.xxxxx.mongodb.net/ecommerce?retryWrites=true&w=majority")
 .then(() => console.log("MongoDB Connected"))
 .catch(err => console.log(err));
 
