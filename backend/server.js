@@ -17,6 +17,8 @@ app.use("/products", productRoutes);
 const orderRoutes = require("./routes/orderRoutes");
 app.use("/orders", orderRoutes);
 
+console.log("MONGO_URI exists:", !!process.env.MONGO_URI);
+
 mongoose
   .connect(process.env.MONGO_URI)
   .then(() => console.log("✅ MongoDB Connected"))
